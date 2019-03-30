@@ -1,8 +1,5 @@
 package Shop;
-
 import Interfaces.iSell;
-
-import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 
 public class Shop {
