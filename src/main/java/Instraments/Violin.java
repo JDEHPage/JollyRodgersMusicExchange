@@ -1,7 +1,7 @@
 package Instraments;
 import Interfaces.*;
 
-public class Violin extends Instrument implements iPlay, iSell {
+public class Violin extends Instrument implements iPlay{
 
     private int numberOfStrings;
     private String bowTipPlateMaterial;
@@ -25,7 +25,4 @@ public class Violin extends Instrument implements iPlay, iSell {
         return "SQUEEE SQUEEE";
     }
 
-    public int calculateMarkup(){
-        return (this.getSellprice() - this.getBuyprice());
-    }
 }

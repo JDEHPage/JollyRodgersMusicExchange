@@ -1,7 +1,7 @@
 package Instraments;
 import Interfaces.*;
 
-public class Piano extends Instrument implements iPlay, iSell {
+public class Piano extends Instrument implements iPlay{
 
     private int numberOfKeys;
 
@@ -19,7 +19,4 @@ public class Piano extends Instrument implements iPlay, iSell {
         return "DING DING DING";
     }
 
-    public int calculateMarkup(){
-        return (this.getSellprice() - this.getBuyprice());
-    }
 }

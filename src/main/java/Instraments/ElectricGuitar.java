@@ -1,7 +1,7 @@
 package Instraments;
 import Interfaces.*;
 
-public class ElectricGuitar extends Instrument implements iPlay, iSell {
+public class ElectricGuitar extends Instrument implements iPlay{
 
     private int numberOfStrings;
 
@@ -19,7 +19,4 @@ public class ElectricGuitar extends Instrument implements iPlay, iSell {
         return "BRANN BRANN";
     }
 
-    public int calculateMarkup(){
-        return (this.getSellprice() - this.getBuyprice());
-    }
 }

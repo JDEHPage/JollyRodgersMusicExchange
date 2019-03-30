@@ -1,7 +1,7 @@
 package Instraments;
 import Interfaces.*;
 
-public class Trumpet extends Instrument implements iPlay, iSell {
+public class Trumpet extends Instrument implements iPlay{
 
     private int numberOfValves;
 
@@ -19,8 +19,5 @@ public class Trumpet extends Instrument implements iPlay, iSell {
         return "BRAAAAAAWWWW";
     }
 
-    public int calculateMarkup(){
-        return (this.getSellprice() - this.getBuyprice());
-    }
 }
 

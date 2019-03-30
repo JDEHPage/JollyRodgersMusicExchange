@@ -1,6 +1,8 @@
 package Instraments;
 
-public abstract class Instrument {
+import Interfaces.iSell;
+
+public abstract class Instrument implements iSell{
 
     private String material;
     private String colour;
@@ -44,5 +46,9 @@ public abstract class Instrument {
 
     public void setSellprice(int sellprice) {
         this.sellprice = sellprice;
+    }
+
+    public int calculateMarkup(){
+        return (this.getSellprice() - this.getBuyprice());
     }
 }

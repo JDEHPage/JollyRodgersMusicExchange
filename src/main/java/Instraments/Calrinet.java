@@ -1,7 +1,7 @@
 package Instraments;
 import Interfaces.*;
 
-public class Calrinet extends Instrument implements iPlay, iSell {
+public class Calrinet extends Instrument implements iPlay{
 
     private String mouthpiece;
 
@@ -19,7 +19,4 @@ public class Calrinet extends Instrument implements iPlay, iSell {
         return "TWEE TWEE TWEE";
     }
 
-    public int calculateMarkup(){
-        return (this.getSellprice() - this.getBuyprice());
-    }
 }
